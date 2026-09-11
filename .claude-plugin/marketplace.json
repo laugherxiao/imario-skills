@@ -1,0 +1,19 @@
+{
+  "name": "imario",
+  "owner": {
+    "name": "iMario"
+  },
+  "metadata": {
+    "description": "Agent Skills for iMario: ask an audience of Synthetic Individuals a research question",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "imario",
+      "description": "Ask an iMario audience how they would react to copy, a page, a price, a concept or an image, before a decision ships",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/imario"]
+    }
+  ]
+}
