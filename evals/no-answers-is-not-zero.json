@@ -1,0 +1,10 @@
+{
+  "skills": ["imario"],
+  "query": "Run the pricing question on our trial users and tell me the result. (imario:get_study returns outcome: no_answers)",
+  "files": [],
+  "expected_behavior": [
+    "Says the study returned no answers and gives the web_url",
+    "Does not present an empty distribution or read it as 0%",
+    "Does not guess at the cause and does not resubmit the same study"
+  ]
+}

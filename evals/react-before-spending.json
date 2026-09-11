@@ -1,0 +1,11 @@
+{
+  "skills": ["imario"],
+  "query": "How would our closed-lost accounts react to weekly onboarding pricing?",
+  "files": [],
+  "expected_behavior": [
+    "Calls imario:list_audiences and uses an existing audience id rather than inventing one",
+    "Calls imario:estimate_study and states the cost in credits",
+    "Asks the user before calling imario:run_study, because the user asked for a read, not for spending",
+    "After the run, reports counts and quotes per audience and never says the pricing will win or convert"
+  ]
+}

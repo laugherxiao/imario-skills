@@ -45,6 +45,12 @@ The skill follows the open [Agent Skills](https://agentskills.io) format. Put th
 - Runs your own material: an image for a creative test, or a questionnaire or interview guide transcribed into questions.
 - Relays limits and errors with the numbers: credits, the workspace's daily limit, audiences it could not use.
 
+## Layout
+
+- `skills/imario/SKILL.md`: the workflow and the rules that always apply.
+- `skills/imario/reference/`: how to read results, every error code, the user's own material. Loaded only when needed.
+- `evals/`: the scenarios the skill is checked against.
+
 ## License
 
 Apache-2.0. See [LICENSE](LICENSE).

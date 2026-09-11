@@ -1,0 +1,10 @@
+{
+  "skills": ["imario"],
+  "query": "Test this ad on our US new parents audience. What would stop them from clicking?",
+  "files": ["test-files/ad.png"],
+  "expected_behavior": [
+    "Calls imario:request_upload instead of describing the image in words",
+    "Reads if_upload_fails before sending the file, then sends it by curl_command, the iMario card or manual_upload_url",
+    "Runs the study with the returned ref in image_refs and reports the objections people raised"
+  ]
+}
