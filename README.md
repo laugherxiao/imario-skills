@@ -8,7 +8,7 @@ The skill teaches an agent to use the iMario MCP server the way a researcher wou
 
 The skill drives the iMario MCP server, so the server has to be connected in your app.
 
-- Server: `https://api-service.imario.ai/mcp`
+- Server: `https://mcp.imario.ai/mcp`
 - Add it in ChatGPT, Claude, Claude Code, Codex, Cursor or VS Code, then approve the connection in iMario. Setup for each app: [Connect the iMario MCP server](https://imario.ai/docs/agent-setup/mcp).
 
 ## Install the skill
