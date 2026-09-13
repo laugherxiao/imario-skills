@@ -1,19 +1,22 @@
 {
   "name": "imario",
   "owner": {
-    "name": "iMario"
+    "name": "iMario",
+    "email": "support@imario.ai"
   },
   "metadata": {
     "description": "Agent Skills for iMario: ask an audience of Synthetic Individuals a research question",
-    "version": "1.0.0"
+    "version": "1.1.0"
   },
   "plugins": [
     {
       "name": "imario",
-      "description": "Ask an iMario audience how they would react to copy, a page, a price, a concept or an image, before a decision ships",
       "source": "./",
-      "strict": false,
-      "skills": ["./skills/imario"]
+      "description": "Ask an iMario audience how they would react to copy, a page, a price, a concept or an image, before a decision ships",
+      "version": "1.1.0",
+      "homepage": "https://imario.ai/docs/agent-setup/install-skill",
+      "category": "research",
+      "tags": ["market-research", "audience", "survey", "focus-group", "mcp"]
     }
   ]
 }

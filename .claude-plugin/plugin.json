@@ -1,0 +1,22 @@
+{
+  "name": "imario",
+  "displayName": "iMario",
+  "version": "1.1.0",
+  "description": "Ask an iMario audience how they would react to copy, a page, a price, a concept or an image, before a decision ships",
+  "author": {
+    "name": "iMario",
+    "email": "support@imario.ai",
+    "url": "https://imario.ai"
+  },
+  "homepage": "https://imario.ai/docs/agent-setup/install-skill",
+  "repository": "https://github.com/laugherxiao/imario-skills",
+  "license": "Apache-2.0",
+  "keywords": [
+    "market-research",
+    "synthetic-individuals",
+    "audience",
+    "survey",
+    "focus-group",
+    "mcp"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "skills": ["imario"],
+  "query": "What is the size of the men's skincare market in Germany, and who are the main players?",
+  "files": [],
+  "expected_behavior": [
+    "Answers from general knowledge or web research without calling any imario tool",
+    "Does not call imario:list_audiences, imario:estimate_study or imario:run_study",
+    "May offer, in one sentence, to ask an iMario audience how they would react to a specific product or claim"
+  ],
+  "negative": true
+}

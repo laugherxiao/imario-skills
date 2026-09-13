@@ -1,6 +1,7 @@
 # Errors
 
-Every error is `{"ok": false, "error": <code>, ...}` with a `hint`, and nothing ran.
+A failed call comes back as a tool error (`isError`) whose JSON body is
+`{"ok": false, "error": <code>, "hint": ...}`. Nothing ran and nothing was charged.
 
 | Code | What to do |
 |---|---|

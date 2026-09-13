@@ -1,0 +1,18 @@
+interface:
+  display_name: "iMario"
+  short_description: "Ask an audience of Synthetic Individuals before a decision ships"
+  icon_small: "./assets/icon-small.png"
+  icon_large: "./assets/icon-large.png"
+  brand_color: "#ea580c"
+  default_prompt: "Use $imario to ask an iMario audience how they would react to this before it ships"
+
+policy:
+  allow_implicit_invocation: true
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "imario"
+      description: "iMario MCP server: audiences, studies and results of one workspace"
+      transport: "streamable_http"
+      url: "https://mcp.imario.ai/mcp"

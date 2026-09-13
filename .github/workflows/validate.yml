@@ -1,0 +1,30 @@
+name: validate
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Agent Skills spec (skills-ref)
+        run: npx -y skills-ref validate skills/imario
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Eval scenarios are well formed
+        run: python evals/check_evals.py
+
+      - name: Claude Code plugin manifest
+        run: |
+          npm install -g @anthropic-ai/claude-code
+          claude plugin validate . --strict

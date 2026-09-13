@@ -1,0 +1,11 @@
+{
+  "skills": ["imario"],
+  "query": "We are cutting the free trial from 14 days to 7. Before we ship, I want to know whether small business owners will push back.",
+  "files": [],
+  "expected_behavior": [
+    "Recognises a reaction question and uses the skill without the user naming iMario",
+    "Calls imario:list_audiences and picks a small-business-owner audience that exists, or previews one with imario:create_audience and dry_run=true",
+    "Calls imario:estimate_study and asks the user before spending, because the user asked for a read, not for a study",
+    "Reports objections as counts and quotes, never as a prediction that the change will or will not work"
+  ]
+}

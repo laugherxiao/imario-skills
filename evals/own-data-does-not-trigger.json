@@ -1,0 +1,11 @@
+{
+  "skills": ["imario"],
+  "query": "Here is the export of last quarter's NPS survey. Summarise the three biggest complaints.",
+  "files": ["test-files/nps_export.csv"],
+  "expected_behavior": [
+    "Reads and summarises the attached file itself",
+    "Does not call imario:run_study or imario:estimate_study, because the user already has the answers",
+    "Does not describe the survey to an iMario audience as if it were a new study"
+  ],
+  "negative": true
+}
