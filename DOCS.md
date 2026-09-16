@@ -150,7 +150,7 @@ code and a `hint` that says what to change. Nothing ran and nothing was charged.
 ## Agent skill (recommended)
 
 The short way, in Claude Code, Codex or Cursor: paste
-`Test this with an iMario audience before I ship: imario.ai/SKILL.md`. The agent fetches a setup
+`Connect iMario to this agent: imario.ai/SKILL.md`. The agent fetches a setup
 sheet, registers the server, installs the skill and hands you the browser approval.
 
 The skill tells the agent to pick an audience before asking, to price a study before running it,
