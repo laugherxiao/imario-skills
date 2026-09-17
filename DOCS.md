@@ -72,6 +72,20 @@ The second command opens the approval page in your browser.
 { "servers": { "imario": { "type": "http", "url": "https://mcp.imario.ai/mcp" } } }
 ```
 
+### ChatGPT
+
+**Settings > Security and login**, turn on **Developer mode**. Then **Settings > Plugins**, select
+**+**, name it iMario, enter `https://mcp.imario.ai/mcp` as the server URL and select **Create**.
+Approve the connection in the browser when asked. ChatGPT reads a pasted page but does not act on
+it, so the one-line setup below is for coding agents only.
+
+### claude.ai and the Claude desktop app
+
+**Customize > Connectors**, select **+**, then **Add custom connector**, enter
+`https://mcp.imario.ai/mcp` and select **Add**. On Team and Enterprise an Owner adds it under
+**Organization settings > Connectors > Add > Custom > Web**, then each member selects **Connect**
+under **Customize > Connectors**. Turn it on in a chat with **+ > Connectors**.
+
 ### Any client
 
 Streamable HTTP, stateless, JSON responses. `X-Imario-Key: imk_…` is accepted in place of the

@@ -21,7 +21,7 @@ Paste this into Claude Code, Codex or Cursor:
 Connect iMario to this agent: imario.ai/SKILL.md
 ```
 
-The page at that address is a setup sheet, not the skill: the agent registers the server, installs this skill with `npx skills add laugherxiao/imario-skills`, and stops at the one step only you can do, approving the connection in your browser.
+The page at that address is a setup sheet, not the skill: the agent registers the server, installs this skill with `npx skills add laugherxiao/imario-skills`, and stops at the one step only you can do, approving the connection in your browser. ChatGPT and claude.ai do not act on a pasted page; there you add the connector in the app's settings ([steps](https://imario.ai/docs/agent-setup/mcp)) and upload the skill by hand.
 
 ### Claude Code
 
