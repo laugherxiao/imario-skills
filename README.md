@@ -1,6 +1,6 @@
 # iMario Skills
 
-Agent Skills for [iMario](https://imario.ai). Ask an audience of Synthetic Individuals, each modelled on a real person, how they would react to copy, a page, a price, a concept or an image, before a decision ships.
+Agent Skills for [iMario](https://imario.ai). Ask anyone anything before you decide: iMario turns your own customer data and 5.4 billion people in 59 markets into synthetic audiences calibrated on real data, and this skill lets your agent put copy, a page, a price, a concept or an image in front of the audience it is for.
 
 The skill teaches an agent to use the iMario MCP server the way a researcher would: pick the right audience, price the study and ask before spending credits, run it, and report what respondents said with counts and quotes. Never as a forecast.
 

@@ -1,6 +1,6 @@
 interface:
   display_name: "iMario"
-  short_description: "Ask an audience of Synthetic Individuals before a decision ships"
+  short_description: "Ask synthetic audiences built from real people before you decide"
   icon_small: "./assets/icon-small.png"
   icon_large: "./assets/icon-large.png"
   brand_color: "#ea580c"

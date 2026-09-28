@@ -5,14 +5,14 @@
     "email": "support@imario.ai"
   },
   "metadata": {
-    "description": "Agent Skills for iMario: ask an audience of Synthetic Individuals a research question",
+    "description": "The iMario plugin: ask synthetic audiences built from real people before you decide",
     "version": "1.1.0"
   },
   "plugins": [
     {
       "name": "imario",
       "source": "./",
-      "description": "Ask an iMario audience how they would react to copy, a page, a price, a concept or an image, before a decision ships",
+      "description": "Synthetic audiences built from real people. Ask anyone anything before you decide: test copy, a page, a price, a concept or an image with the audience it is for.",
       "version": "1.1.0",
       "homepage": "https://imario.ai/docs/agent-setup/install-skill",
       "category": "research",
