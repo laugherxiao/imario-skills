@@ -1,0 +1,22 @@
+{
+  "name": "imario",
+  "displayName": "iMario",
+  "version": "1.1.0",
+  "description": "Synthetic audiences built from real people. Ask anyone anything before you decide: test copy, a page, a price, a concept or an image with the audience it is for.",
+  "author": {
+    "name": "iMario",
+    "email": "support@imario.ai"
+  },
+  "homepage": "https://imario.ai/docs/agent-setup/install-skill",
+  "repository": "https://github.com/laugherxiao/imario-skills",
+  "license": "Apache-2.0",
+  "keywords": [
+    "market-research",
+    "synthetic-individuals",
+    "audience",
+    "survey",
+    "focus-group",
+    "mcp"
+  ],
+  "logo": "assets/logo.png"
+}

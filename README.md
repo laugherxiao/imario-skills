@@ -34,6 +34,16 @@ The plugin also registers the server address. Run `/mcp`, select `imario` and ch
 
 To install without the marketplace, copy `skills/imario` into `~/.claude/skills/`.
 
+### Cursor
+
+This repository is also a Cursor plugin: the skill plus the server address. Clone it into Cursor's local plugin folder (a copy; Cursor skips a symlink to a folder elsewhere), then run **Developer: Reload Window**:
+
+```
+git clone https://github.com/laugherxiao/imario-skills ~/.cursor/plugins/local/imario
+```
+
+Open **Customize** to check that the `imario` skill and MCP server are there, then select the server in Cursor's MCP settings and sign in to approve the connection.
+
 ### Codex
 
 Copy `skills/imario` into `~/.agents/skills/`, then restart Codex. Codex reads `agents/openai.yaml` for the skill's name, icon and its dependency on the iMario server; invoke it explicitly with `$imario` or let Codex pick it from the request.
@@ -74,6 +84,7 @@ The skill follows the open [Agent Skills](https://agentskills.io) format. Put th
 - `skills/imario/references/`: how to read results, every error code, the user's own material. Loaded only when needed.
 - `skills/imario/agents/openai.yaml`: Codex metadata (display name, icon, MCP dependency).
 - `.claude-plugin/`, `.mcp.json`: the Claude Code plugin manifest and the server it registers.
+- `.cursor-plugin/`, `mcp.json`, `assets/logo.png`: the Cursor plugin manifest, the server it registers and its logo.
 - `evals/`: the scenarios the skill is checked against, including prompts where it must not fire.
 
 ## Privacy and support

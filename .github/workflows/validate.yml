@@ -28,3 +28,15 @@ jobs:
         run: |
           npm install -g @anthropic-ai/claude-code
           claude plugin validate . --strict
+
+      - name: Cursor plugin manifest
+        # Cursor's validator reads a marketplace at the repository root, so
+        # check this plugin from inside a one-plugin wrapper.
+        run: |
+          mkdir -p /tmp/cursor/.cursor-plugin /tmp/cursor/plugins/imario
+          tar --exclude=.git -cf - . | tar -xf - -C /tmp/cursor/plugins/imario
+          echo '{"name":"imario-check","owner":{"name":"iMario"},"plugins":[{"name":"imario","source":"./plugins/imario"}]}' \
+            > /tmp/cursor/.cursor-plugin/marketplace.json
+          curl -fsSL https://raw.githubusercontent.com/cursor/plugin-template/main/scripts/validate-template.mjs \
+            -o /tmp/validate-cursor.mjs
+          cd /tmp/cursor && node /tmp/validate-cursor.mjs
