@@ -106,8 +106,8 @@ connection when it sends you here. The discovery documents it reads are
 
 | Tool | What it does |
 |---|---|
-| `list_audiences` | The audiences this workspace can ask: your own, the census populations of your markets, official calibrated ones. Returns ids, size, provenance and the definition split into measured / estimated / unsupported. |
-| `create_audience` | Build a new audience from a one-line brief on a national census frame. Previews by default (`dry_run=true`) and saves nothing; pass `dry_run=false` to create it. Anything the brief asked for that could not be applied comes back under `unsupported`. |
+| `list_audiences` | The audiences this workspace can ask: your own, the measured populations of your markets, official calibrated ones. Returns ids, size, provenance and the definition split into measured / estimated / unsupported. |
+| `create_audience` | Build a new audience from a one-line brief on a market's measured population. Previews by default (`dry_run=true`) and saves nothing; pass `dry_run=false` to create it. Anything the brief asked for that could not be applied comes back under `unsupported`. |
 | `get_audience` | One audience's profile: composition, the real survey questions that anchor it, usage. |
 | `estimate_study` | Credits, balance, the key's rails, and whether a person should confirm before running. Takes the same study fields as `run_study`. |
 | `run_study` | Submit a study: `closed_question`, `open_question`, `preference_test`, `image_reaction`, `url_feedback`, `survey`, `guide`, `focus_group`. Returns `run_id`, `study_id`, `web_url`. Pass an earlier `study_id` to ask the same respondents a follow-up: the whole panel answers again, with their earlier answers in front of them. |
