@@ -13,8 +13,9 @@ Two ways in, decided by what the client can do rather than by your account.
 
 **Approve a connection.** ChatGPT, the Claude apps, Claude Code, Codex and any host that takes
 only a server address walk OAuth 2.1: they discover the authorization server from the 401, identify themselves, and send
-you to iMario to sign in, pick a workspace and approve. PKCE with S256 is required; there is no
-implicit flow. The approved connection is listed in **Settings > MCP & API** and disconnected there.
+you to iMario to sign in, pick a workspace and approve. PKCE with S256 is required, unless the
+client registered with a secret (`token_endpoint_auth_method: client_secret_post`) and presents it
+at `/oauth/token`; there is no implicit flow. The approved connection is listed in **Settings > MCP & API** and disconnected there.
 
 A host identifies itself either way the spec allows. It can register at `/oauth/register`
 (RFC 7591), or it can skip registration and use the https URL of its own client metadata document
